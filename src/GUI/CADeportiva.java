@@ -161,6 +161,7 @@ public class CADeportiva extends javax.swing.JFrame {
         jLabel8.setText("Desea ser coordinador de la actividad?");
 
         rbtSi.setBackground(new java.awt.Color(10, 133, 172));
+        buttonGroup1.add(rbtSi);
         rbtSi.setText("Sí");
         rbtSi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,6 +170,7 @@ public class CADeportiva extends javax.swing.JFrame {
         });
 
         rbtNo.setBackground(new java.awt.Color(10, 133, 172));
+        buttonGroup1.add(rbtNo);
         rbtNo.setText("No");
         rbtNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

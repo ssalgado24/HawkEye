@@ -48,3 +48,13 @@ Estudiante
 I. Sistemas
 Pregrado
 
+Diego
+Diaz
+12345
+ddiaz
+12
+ddiaz
+Estudiante
+Economía
+Posgrado
+

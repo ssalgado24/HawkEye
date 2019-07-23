@@ -123,7 +123,6 @@ public class RegistroAppProfesor extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        txtContraseña = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         txtCorreo = new javax.swing.JTextField();
         btnListoRegistro = new javax.swing.JButton();
@@ -136,6 +135,7 @@ public class RegistroAppProfesor extends javax.swing.JFrame {
         pnlIcono1 = new javax.swing.JPanel();
         pnlIconoP = new javax.swing.JPanel();
         pnlEP = new javax.swing.JPanel();
+        txtContraseña = new javax.swing.JPasswordField();
 
         btnRegresar.setBorder(null);
         btnRegresar.setPreferredSize(new java.awt.Dimension(40, 40));
@@ -268,6 +268,12 @@ public class RegistroAppProfesor extends javax.swing.JFrame {
             .addComponent(pnlEP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        txtContraseña.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtContraseñaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -276,14 +282,6 @@ public class RegistroAppProfesor extends javax.swing.JFrame {
                 .addContainerGap(29, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel6)
-                            .addGap(18, 18, 18)
-                            .addComponent(txtContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addComponent(jLabel5)
-                            .addGap(28, 28, 28)
-                            .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addComponent(jLabel3)
                             .addGap(27, 27, 27)
@@ -308,7 +306,18 @@ public class RegistroAppProfesor extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addComponent(jLabel4)
                             .addGap(18, 18, 18)
-                            .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(jLabel5)
+                                    .addGap(28, 28, 28))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(jLabel6)
+                                    .addGap(18, 18, 18)))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
+                                .addComponent(txtContraseña))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(246, 246, 246)
                         .addComponent(btnListoRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -470,6 +479,10 @@ public class RegistroAppProfesor extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_btnRegresar1ActionPerformed
 
+    private void txtContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContraseñaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtContraseñaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -527,7 +540,7 @@ public class RegistroAppProfesor extends javax.swing.JFrame {
     private javax.swing.JPanel pnlIconoP;
     private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtArea;
-    private javax.swing.JTextField txtContraseña;
+    private javax.swing.JPasswordField txtContraseña;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JTextField txtDocumento;
     private javax.swing.JTextField txtMateria;
